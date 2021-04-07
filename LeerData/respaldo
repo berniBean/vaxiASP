@@ -1,0 +1,43 @@
+ private async void Consulta(){
+                Task<string> task = new Task<string>(solicitud)
+                Task.Start();
+                solicitud();
+            }
+
+            private string solicitud(){
+                using  (var db = new AppVentaCursosContext())
+                {
+                    System.Console.WriteLine("hola mundo");
+                    var cursos = db.Curso.AsNoTracking();
+                    foreach (var item in cursos)
+                    {
+                        System.Console.WriteLine(item.Titulo);
+                    }
+                }
+
+            }
+            // using  (var db = new AppVentaCursosContext())
+            // {
+            //     System.Console.WriteLine("hola mundo");
+            //     var cursos = db.Curso.AsNoTracking();
+            //     foreach (var item in cursos)
+            //     {
+            //         System.Console.WriteLine(item.Titulo);
+            //     }
+
+                // var cursos = db.Curso.Include(p=>p.PrecioPromocion).AsNoTracking();
+                // foreach (var curso in cursos)
+                // {
+                //     System.Console.WriteLine(curso.Titulo+"----------"+curso.PrecioPromocion.PrecioActual);
+                // }
+
+                // var cursos = db.Curso.Include(c=>c.ComentarioLista).AsNoTracking();
+                // foreach (var item in cursos)
+                // {
+                //     System.Console.WriteLine(item.Titulo);
+                //     foreach (var comentario in cursos.ComentarioLista)
+                //     {
+                //         System.Console.WriteLine(comentario.ComentarioTexto);
+                //     }
+ 
+                // }

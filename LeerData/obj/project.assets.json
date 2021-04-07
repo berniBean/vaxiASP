@@ -5703,20 +5703,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\efloresp\\.nuget\\packages\\": {}
+    "C:\\Users\\ernes\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\efloresp\\Documents\\udemy\\vaxi\\LeerData\\leerdata.csproj",
+      "projectUniqueName": "C:\\Users\\ernes\\Documents\\Udemy\\Vaxi\\vaxiASP\\LeerData\\leerdata.csproj",
       "projectName": "leerdata",
-      "projectPath": "C:\\Users\\efloresp\\Documents\\udemy\\vaxi\\LeerData\\leerdata.csproj",
-      "packagesPath": "C:\\Users\\efloresp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\efloresp\\Documents\\udemy\\vaxi\\LeerData\\obj\\",
+      "projectPath": "C:\\Users\\ernes\\Documents\\Udemy\\Vaxi\\vaxiASP\\LeerData\\leerdata.csproj",
+      "packagesPath": "C:\\Users\\ernes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ernes\\Documents\\Udemy\\Vaxi\\vaxiASP\\LeerData\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\efloresp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\ernes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5727,6 +5732,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -5738,6 +5744,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -5763,7 +5770,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }

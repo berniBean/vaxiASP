@@ -9,7 +9,7 @@ namespace LeerData
 {
     public class AppVentaCursosContext : DbContext
     {
-        private const string connectionString = @"Data Source=EFLORESP\SQLEXPRESS; Initial Catalog=CursosOnline; Integrated Security=True";   
+        private const string connectionString = @"Data Source=localhost\SQLEXPRESS02; Initial Catalog=CursosOnline; Integrated Security=True";   
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             optionsBuilder.UseSqlServer(connectionString);
