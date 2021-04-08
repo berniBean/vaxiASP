@@ -28,6 +28,7 @@ namespace leerdata
 
             await Trabajo2();
             await ComentariosAsync();
+            await CursoIntructorAsync();
 
 
            Console.WriteLine("He terminado la tarea");
@@ -52,6 +53,25 @@ namespace leerdata
                 });
                 task.Start();
                 await task;
+            }
+
+            public static async Task CursoIntructorAsync(){
+                var task = new Task(()=>{
+                    using  (var db = new AppVentaCursosContext()){
+                        var cursos = db.Curso.Include(c=>c.InstructorLink).ThenInclude(ci => ci.Instructor);
+                        
+                        foreach (var curso in cursos)
+                        {
+                            System.Console.WriteLine(curso.Titulo);
+                            foreach (var link in curso.InstructorLink)
+                            {
+                                System.Console.WriteLine("************"+link.Instructor.Nombre);
+                            }
+                        }
+                    }
+                });
+                task.Start();
+                await task;                
             }
 
 

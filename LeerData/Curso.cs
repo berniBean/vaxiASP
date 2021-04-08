@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 
 using System.CodeDom.Compiler;
-using System.Security.Cryptography.X509Certificates;
 using System;
 namespace LeerData
 {
@@ -14,6 +13,9 @@ namespace LeerData
         
         public Precio PrecioPromocion{get; set;}
         public ICollection <Comentario> ComentarioLista {get; set;}
+
+        public ICollection<CursoInstructor> InstructorLink{get; set;}
+
         
     }
 }
